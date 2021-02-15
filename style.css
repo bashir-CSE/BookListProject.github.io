@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  
+}
+.msg {
+  background-color: rgb(252, 25, 25);
+  padding: 5px 10px;
+  color: #fff;
+   border-radius: 4px !important;
+}
+.form-control,
+.btn {
+  border-radius: 4px !important;
+}
+.btn {
+  background-color: rgb(4, 151, 4) !important ;
+  border: none;
+  outline: none;
+}

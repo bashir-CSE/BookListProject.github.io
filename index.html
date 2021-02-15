@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Book List</title>
+	</head>
+	<body>
+		<div class="container ">
+			<div class="row">
+				<div class="col-md-10 col-lg-7 col-sm-12 mx-auto">
+					<form class="">
+						<h1 class="text-center">Book list</h1>
+						<p class="pera"></p>
+						<!-- 1st row -->
+						<div class="mb-3">
+							<label class="form-label">Book Name</label>
+							<input type="text" class="form-control book" placeholder="Ex: Eloquent JavaScript" />
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Author Name</label>
+							<input type="text" class="form-control author" placeholder="Ex: Marijn Haverbeke" />
+						</div>
+
+						<div class="mb-3">
+							<label class="form-label">ISBN</label>
+							<input type="number" class="form-control isbn" placeholder="Ex: 123456789" />
+						</div>
+
+						<button type="submit" class="btn btn-primary w-100">Add Book</button>
+					</form>
+					<!-- table -->
+					<table class="table mt-4 table-striped table-hover">
+						<thead class="thead">
+							<tr>
+								<th class="">book name</th>
+								<th class="">author name</th>
+								<th class="">#ISBN</th>
+							</tr>
+						</thead>
+						<tbody id="bookList"></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+
+		<!-- custom script -->
+		<script src="bookApp.js"></script>
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
